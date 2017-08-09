@@ -1,0 +1,45 @@
+HANGMAN
+
+the Obective:
+	to guess a random word, one letter at a time, with a limited number of guesses.
+
+The Setup:
+	the computer chooses a word, and displays an _ for each letter in the word.
+
+The Rules:
+	*player guesses a letter
+	*if it is correct, computer fills in the corresponding _(s)
+	*if it is incorrect, the computer places the letter below the board and decreases the guesses remaining by one.
+
+How to win:
+	the player must fill in all the _ with the correct letters within the timeframe/#of guesses.
+
+
+Coding the game:
+
+*I need an array of words the computer can choose.
+*I need code to 'get' a random word from the list
+* I need the computer to count the number of letters in the word chosen and put that many _ on the board.
+*I need a counter for wins
+* I need a counter for losses
+* I need an event listener to know which letter the player typed.
+* I need cod3e to clear the board and choose another word.
+* this sounds like a series of if else statements within a loop or two.
+
+
+HTML
+
+header: with game title and optional subtitle
+
+div: for the score wins vs losses
+	javascript or jquery for the counters
+
+div: for the word
+	js or jquery to change the innerHTML
+
+div: for the incorrect letters
+
+div: for the WINNER image
+
+div: for the "hangman"
+	code for each image to appear with an incorrect letter
