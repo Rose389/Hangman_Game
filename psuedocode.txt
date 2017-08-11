@@ -34,6 +34,8 @@ header: with game title and optional subtitle
 div: for the score wins vs losses
 	javascript or jquery for the counters
 
+button: to start game
+
 div: for the word
 	js or jquery to change the innerHTML
 
@@ -43,3 +45,39 @@ div: for the WINNER image
 
 div: for the "hangman"
 	code for each image to appear with an incorrect letter
+
+
+DETAILED
+
+Title: Hangman
+subtitle: we're going old school!
+
+Score: (+100 points/correct letter & -25 points/wrong letter)
+
+left half of screen has a picture 			right half of the screen
+of an empty gallows from 					has the playing board
+(the Mummy, Pirates, or doctor who)			(use a handwriting font for the letters)
+
+footer has a copyright statement that I created the game, and a disclaimer for the copyrighted material that I am not making any money on my school project.
+
+
+js/jquery
+
+variables needed
+	winsCounter
+	lossesCounter
+
+
+on button click start the game
+	grab word from array
+	count letters and print # of _
+	wait for event listener of keys
+
+When key is pressed
+	check to see if letter is in word
+	if in word place in correct location else put in wrong letter section
+	repeat until # of guesses === 0 OR word is completely filled in
+
+if # guesses reaches 0 with word incomplete, put TRY AGAIN? on the screen
+
+if word completed show corresponding image.
