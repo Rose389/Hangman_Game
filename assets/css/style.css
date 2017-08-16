@@ -1,0 +1,85 @@
+html {
+	font-family: Gothic, fantasy;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+
+head {
+	height: 90px;
+}
+
+title {
+
+}
+
+body {
+	width: 100%;
+	background-color: #4374BD;
+	vertical-align: middle;
+	margin: 0px;
+	padding: 0px;
+}
+
+header {
+
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+button {
+
+}
+
+#beginGame {
+
+}
+
+div {
+
+}
+
+#scoreWon {
+
+}
+
+#scorelost {
+	
+}
+
+#gameScore {
+	
+}
+
+#gallows {
+
+}
+
+#hangman {
+
+}
+	
+#mysteryWord {
+
+}
+
+#wrongLettersGuessed {
+
+}
+
+footer {
+	background-color: #4d4d4d;
+	color: white;
+	height: 60px;
+}
+
+#copyright {
+
+}
+

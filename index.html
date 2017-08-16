@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>My Hangman Game</title>
-	<link type="text/javascript" href=>
+	<link type="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
@@ -20,7 +20,7 @@
 	<!-- Left side of screen: the gallows and the hangman -->
 
 		<!-- image is stationary and constant.  use as background for div? -->
-		<div id="gallows"></div>
+		<div id="gallows"> <img src="Assets/images/pirateGallows.jpg"></div>
 
 		<!-- Image changes based on how many wrong guesses have been used. will need a loop : #totalGuesses - #remainingGuesses === [1, 2, 3, 4, 5, 6] ; show corresponding image [head, body, leftArm, rightArm, leftLeg, rightLeg]-->
 		<div id="hangman"></div> <!-- I think this <div> needs to be inside the previous <div> because the gallows would be the background for the hangman -->

@@ -1,6 +1,6 @@
- document.addEventListener("DOMContentLoaded", function() { 
+$('document').ready(function(){
+/* Can define all functions seperately here */ 
 
-/* Variables Needed */ 
 
 /* number of games won */
 var gamesWon = 0; /* counter increases by 1 when word guessed */
@@ -12,7 +12,8 @@ var gamesLost = 0; /* counter increases by 1 when word NOT guessed */
 var wordListToGuess = ["jacksparrow", "tortuga", "eastindiatradingcompany", "blacksmit h",
 "howsyourfootwork", "whystherumgone", "norrington", "piratesbounty",
 "theblackpearlscaptain", "hectorbarbossa"]; 
-/* Variables Needed */ 
+
+var letter = ""; /* letter keyed by user */ 
 /* Variables Needed */ 
 /* Variables Needed */
 /* Variables Needed */ 
@@ -42,26 +43,33 @@ var mysteryWord = wordListToGuess[Math.floor(Math.random() * wordListToGuess.len
 /*		then count number of characters in word, store as variable and use innerHTML to print #var underscores in wordToGuess */
 		
 function createBlanks() {
-	var text = "";
-		for (i = 0; i < mysteryWord.length; i++) { 
+	var text = "_ ";
+		for (i = 0; i <= mysteryWord.length; i++) { 
 		    text += mysteryWord.charAt(Math.floor(Math.random() * mysteryWord.length));
 		    document.getElementById("mysteryWord").innerHTML = (text);
 		}
 }
-
-while (guesses > 0) {
+/*
 /* have onkey event listener */
-onkeydown()
+$(document).keyup(function(e) {
+ 	letter = alert(String.fromCharCode(evt.keyCode));
+ 	letter.lowerCase();
+ 	mysteryWord.search(letter);
+ 	;
+    return.guesses = guesses--;
+ });
+       //do stuff
 /* when key is typed check if in word */
-/* if in word print in correct character location */
+	/* if in word print in correct character location */
 /* 	when done increase score */
 /* if not in word, print in wrongLettersGuessed */
 /* 	when done remove a guess */
 /* 		decrease score */
 /* 		change visible hangman picture */
-}
 
-if (guesses === 0) {
+};
+
+});
 /* when word is complete */
 /* 	change background */
 /* 	hide hangman */
@@ -70,6 +78,3 @@ if (guesses === 0) {
 /* when all guesses used and word NOT complete */
 /* 	Print "Poor Jack - wanna try again?" */
 /*  increase gamesLostCounter */
-}
-
-});
